@@ -2,21 +2,21 @@ const mongoose=require("mongoose");
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.Types.ObjectId;
 
-const userschema = new Schema({
+const userSchema = new Schema({
     email:{type:String,unique:true},
     password:String,
     firstName:String,
     lastName:String,
 })
 
-const adminschema = new Schema({
+const adminSchema = new Schema({
     email:{type:String,unique:true},
     password:String,
     firstName:String,
     lastName:String,
 })
 
-const courseschema = new Schema({
+const courseSchema = new Schema({
     title:String,
     descrption:String,
     imageUrl:String,
@@ -24,7 +24,7 @@ const courseschema = new Schema({
     creatorId:ObjectId,
 })
 
-const purchaseschema = new Schema({
+const purchaseSchema = new Schema({
     userId: ObjectId,
     courseId: ObjectId
 })

@@ -1,7 +1,6 @@
 const { Router } = require("express");
 const {userModel}=require("../db");
-const { use } = require("react");
-const { userMiddleware } = require("../middlewares/user");
+const { userMiddleware } = require("../middllewares/user");
 const jwt=require("jsonwebtoken");
 const {JWT_USER_PASSWORD}=require("../config");
 
